@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.0" />
+    <PackageReference Include="Polly" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AWS.Logger.AspNetCore">
+      <HintPath>SDK\AWS.Logger.AspNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AWS.Logger.Core">
+      <HintPath>SDK\AWS.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherent.Logging.SDK">
+      <HintPath>SDK\Coherent.Logging.SDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
